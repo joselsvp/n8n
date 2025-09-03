@@ -1,0 +1,34 @@
+{
+  "name": "n8n-render-deployment",
+  "version": "1.0.0",
+  "description": "n8n deployment configuration for Render",
+  "main": "index.js",
+  "scripts": {
+    "start": "node start.js",
+    "dev": "./scripts/local-dev.sh start",
+    "dev:stop": "./scripts/local-dev.sh stop",
+    "dev:restart": "./scripts/local-dev.sh restart",
+    "dev:logs": "./scripts/local-dev.sh logs",
+    "dev:status": "./scripts/local-dev.sh status",
+    "dev:reset": "./scripts/local-dev.sh reset",
+    "auth:on": "./scripts/local-dev.sh auth-on",
+    "auth:off": "./scripts/local-dev.sh auth-off",
+    "build": "docker build -t n8n-render .",
+    "deploy": "echo 'Deploy to Render using the provided configuration'"
+  },
+  "keywords": [
+    "n8n",
+    "automation",
+    "workflow",
+    "render",
+    "deployment"
+  ],
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "dependencies": {
+    "n8n": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
