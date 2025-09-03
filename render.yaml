@@ -3,7 +3,7 @@ services:
     name: n8n-automation
     env: docker
     dockerfilePath: ./Dockerfile
-    plan: starter
+    plan: free
     region: oregon
     branch: main
     envVars:
