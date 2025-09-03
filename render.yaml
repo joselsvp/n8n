@@ -28,14 +28,20 @@ services:
       - key: N8N_LOG_OUTPUT
         value: console
       - key: N8N_PAYLOAD_SIZE_MAX
-        value: 16
+        value: 8
       - key: N8N_METRICS
-        value: true
+        value: false
       - key: N8N_USER_MANAGEMENT_DISABLED
         value: false
       - key: N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS
         value: true
       - key: N8N_DISABLE_UI
         value: false
+      - key: N8N_EXECUTION_TIMEOUT
+        value: 300
+      - key: N8N_EXECUTION_TIMEOUT_MAX
+        value: 600
+      - key: N8N_DEFAULT_BINARY_DATA_MODE
+        value: filesystem
     healthCheckPath: /healthz
     autoDeploy: true
